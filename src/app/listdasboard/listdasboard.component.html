@@ -1,0 +1,19 @@
+<header class="header">
+  <h1 class="logo"><a>sCart Products</a></h1>
+    <ul class="main-nav">
+        <!-- <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li> -->
+        <li><a>Welcome  {{user}}</a></li>
+        <li class="logout" (click)="logout()"><a>Logout</a></li>
+    </ul>
+</header>
+<div class="flex-container">
+  <div class="card" *ngFor="let product of productlist">
+    <img src="{{product.image}}" style="width:100px">
+    <h6>Brand :{{product.brand}}</h6>
+    <p class="price">Colors available :{{product.colour.title}}</p>
+    <p class="price">Final Price :{{product.price.final_price}}</p>
+    <p class="price">Discount :{{product.discount}}</p>
+    <p><button>Add to Cart</button></p>
+  </div>
+</div>

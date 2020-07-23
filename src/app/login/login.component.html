@@ -1,0 +1,15 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> sCart </h2>
+
+    <form (submit)="onLogin(LoginForm)" #LoginForm="ngForm">
+      <input type="text" id="login"  ngModel   #login="ngModel" class="fadeIn second" name="login"  placeholder="login">
+      <div *ngIf="login.errors">please enter title</div>
+      <input type="text" id="password" ngModel   #password="ngModel" class="fadeIn third" name="password" placeholder="password">
+      <div *ngIf="password.errors">please enter title</div>
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+  </div>
+</div>
