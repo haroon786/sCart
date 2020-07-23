@@ -7,8 +7,12 @@
         <li class="logout" (click)="logout()"><a>Logout</a></li>
     </ul>
 </header>
+<div class="search-hero">
+  <input class="form-control" type="text" name="search" [(ngModel)]="searchProduct" autocomplete="off"
+  placeholder="Search Products">
+</div>
 <div class="flex-container">
-  <div class="card" *ngFor="let product of productlist">
+  <div class="card" *ngFor="let product of productlist | filter:searchProduct">
     <img src="{{product.image}}" style="width:100px">
     <h6>Brand :{{product.brand}}</h6>
     <p class="price">Colors available :{{product.colour.title}}</p>

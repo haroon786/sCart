@@ -12,7 +12,7 @@ import { ListItemsComponent } from './list-items/list-items.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    ListItemsComponent
+    ListItemsComponent,
   ],
   imports: [
     BrowserModule,

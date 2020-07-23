@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import { ILogin } from '../modals/login';
 import { map } from 'rxjs/operators';
 import { IProducts } from '../modals/Products';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -26,6 +27,15 @@ export class ScartService {
   getPorducgtList()
   {
      return  this.httpclient.get<IProducts[]>('https://xebiascart.herokuapp.com/products')
-     
+
+  }
+  searchName(name:string):Observable<IProducts[]>
+  {
+    if(!name.trim())
+    {
+      return of([]);
+    }
+    console.log(name)
+    return this.httpclient.get<IProducts[]>(`https://xebiascart.herokuapp.com/products?title=${name}`)
   }
 }
