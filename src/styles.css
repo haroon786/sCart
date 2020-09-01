@@ -2,3 +2,6 @@
 
 
 
+.mat-drawer-content{
+      overflow: unset !important;
+}

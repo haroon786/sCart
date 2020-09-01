@@ -26,7 +26,7 @@ export class ScartService {
   }
   getPorducgtList()
   {
-     return  this.httpclient.get<IProducts[]>('https://xebiascart.herokuapp.com/products')
+     return  this.httpclient.get<IProducts[]>('https://fakestoreapi.com/products')
 
   }
   searchName(name:string):Observable<IProducts[]>

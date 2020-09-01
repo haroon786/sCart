@@ -1,0 +1,46 @@
+mat-toolbar {
+  justify-content: space-between;
+  position: sticky;
+   position: -webkit-sticky; /* For macOS/iOS Safari */
+   top: 0; /* Sets the sticky toolbar to be on top */
+   z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  margin-bottom: 16px;
+}
+
+
+.example-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+.mat-card-title
+{
+  font-size: medium;
+}
+.mat-card-image
+{
+  width: 50px;
+}
+.mat-card
+{
+
+  height: 200px;
+}

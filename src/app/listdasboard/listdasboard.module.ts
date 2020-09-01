@@ -11,6 +11,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
  import { FlexLayoutModule } from "@angular/flex-layout";
+ import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [ListdasboardComponent],
   imports: [
@@ -23,7 +24,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatListModule,
     MatIconModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule
   ]
 })
 export class ListdasboardModule { }
